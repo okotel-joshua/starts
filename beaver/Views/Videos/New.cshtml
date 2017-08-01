@@ -1,0 +1,12 @@
+﻿@model beaver.Models.Video
+@using (Html.BeginForm("Add", "Videos", FormMethod.Post, new { @class = "form" }))
+{
+    Html.RenderPartial("_VideoForm");
+}
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New</h2>
+
